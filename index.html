@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Converter</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <h1>Measurement converter</h1>
+      <h2>Inches to Centimeters</h2>
+      <div>
+        <input
+          type="text"
+          name="value1"
+          id="value1"
+          onInput="convertCmIn()"
+          value="1"
+        />
+        <select name="measur1" id="measur1" onChange="change1(), convertCmIn()">
+          <option value="cm">cm.</option>
+          <option value="in" selected>in.</option>
+        </select>
+        <input type="text" name="value2" id="value2" onInput="convertInCm()" />
+        <select name="measur2" id="measur2" onChange="change2(), convertInCm()">
+          <option value="cm" selected>cm.</option>
+          <option value="in">in.</option>
+        </select>
+      </div>
+    </main>
+
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
