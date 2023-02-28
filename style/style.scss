@@ -17,13 +17,48 @@ body {
 
 .main-container {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 10rem auto;
   background-color: lightgray;
   padding: 30px 15px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  & h1 {
-    font-size: 40px;
+  & > h1 {
+    font-size: 4rem;
+    color: #ff4500;
+    margin-bottom: 2rem;
+  }
+  & > h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #700dff;
+  }
+  & > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    & > input {
+      width: 30%;
+      height: 4rem;
+      background-color: #000000;
+      color: #fff819;
+      border: none;
+      text-align: center;
+      outline: none;
+      font-size: 20px;
+      font-family: inherit;
+    }
+    & > select {
+      height: 40px;
+      font-family: inherit;
+      font-size: 2rem;
+      background-color: #000000;
+      color: #fff819;
+      border: none;
+      padding: 0 5px;
+      cursor: pointer;
+    }
   }
 }
